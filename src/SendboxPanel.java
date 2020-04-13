@@ -22,6 +22,7 @@ public class SendboxPanel extends Panel
     static OutputStream output;
     static InputStream input;
     static String ipAddress = "95.109.71.23";
+    static byte[] buffer = new byte[1000];
 
     void setup()
     {
@@ -52,7 +53,11 @@ public class SendboxPanel extends Panel
 
     private void clientSetup() throws Exception
     {
-        client = new Socket("95.109.71.23", 7777);
+        client = new Socket(ipAddress, port);
+        output = client.getOutputStream();
+        input = client.getInputStream();
+        buffer = "noooooooob".getBytes();
+        output.write(buffer);
     }
 
     public void paintComponent(Graphics g)
@@ -62,6 +67,11 @@ public class SendboxPanel extends Panel
 
         g.setColor(Color.BLACK);
         g.drawRect(0,0, width, length);
+    }
+
+    public static void sendMessage(String message)
+    {
+
     }
 
     static class Send implements ActionListener
@@ -83,12 +93,16 @@ public class SendboxPanel extends Panel
             else
             {
                 message.setEditable(false);
+                sendMessage(message.getText());
                 message.setText("Sending.");
                 timer.start();
             }
             System.out.println(message.getLineCount() + " - " + message.getColumns() + "\n" + message.getText());
         }
     }
+
+
+
     static class LoadingScreen implements  ActionListener
     {
 
