@@ -27,7 +27,6 @@ public class SendboxPanel extends Panel
     void setup()
     {
         this.setBounds(0, ContactsPanel.length, width + 1, length + 1);
-        this.setLayout(null);
         this.add(sendButton);
         this.add(scrol);
 
@@ -56,7 +55,7 @@ public class SendboxPanel extends Panel
         client = new Socket(ipAddress, port);
         output = client.getOutputStream();
         input = client.getInputStream();
-        buffer = "noooooooob".getBytes();
+        buffer = "nooooooooooooooobkajshdkjsahdkjashödkjhkjjljd".getBytes();
         output.write(buffer);
     }
 
@@ -69,12 +68,23 @@ public class SendboxPanel extends Panel
         g.drawRect(0,0, width, length);
     }
 
-    public static void sendMessage(String message)
+    public void sendMessage(String message)
     {
-
+        try
+        {
+            buffer = message.getBytes();
+            output.write(buffer);
+            timer.stop();
+            this.message.setText("");
+            this.message.setEditable(true);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
-    static class Send implements ActionListener
+    class Send implements ActionListener
     {
 
         public void actionPerformed(ActionEvent e)
@@ -93,9 +103,10 @@ public class SendboxPanel extends Panel
             else
             {
                 message.setEditable(false);
-                sendMessage(message.getText());
+                String text = message.getText();
                 message.setText("Sending.");
                 timer.start();
+                sendMessage(text);
             }
             System.out.println(message.getLineCount() + " - " + message.getColumns() + "\n" + message.getText());
         }

@@ -6,6 +6,7 @@ public abstract class Panel extends JPanel
     public void frameAdding()
     {
         MainClass.win.add(this);
+        this.setLayout(null);
     }
 
     public void buttonDesign(JButton b)
