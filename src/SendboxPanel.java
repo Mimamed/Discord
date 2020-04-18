@@ -13,15 +13,11 @@ import java.net.Socket;
 
 public class SendboxPanel extends Panel
 {
-    static int width = 700, length = 80, port = 7777, delay = 1000, loadingSekuens = 0;
+    static int width = 700, length = 80, delay = 1000, loadingSekuens = 0;
     static JButton sendButton = new JButton("Send");
     static JTextArea message = new JTextArea("");
     static JScrollPane scrol = new JScrollPane(message);
     static Timer timer = new Timer(delay, new LoadingScreen());
-    static Socket client;
-    static OutputStream output;
-    static InputStream input;
-    static String ipAddress = "95.109.71.23";
     static byte[] buffer = new byte[1000];
 
     void setup()
@@ -38,26 +34,10 @@ public class SendboxPanel extends Panel
         message.setLineWrap(true);
         sendButton.addActionListener(new Send());
 
-        try
-        {
-            clientSetup();
-        }catch (Exception e)
-        {
-            System.out.println("något gick fel med clientSetup()");
-            MainClass.makeMessage("<html>Somthing went wrong with network <br/>error message:<br/>" + e.getMessage() + "</html>");
-        }
     }
 
 
 
-    private void clientSetup() throws Exception
-    {
-        client = new Socket(ipAddress, port);
-        output = client.getOutputStream();
-        input = client.getInputStream();
-        buffer = "nooooooooooooooobkajshdkjsahdkjashödkjhkjjljd".getBytes();
-        output.write(buffer);
-    }
 
     public void paintComponent(Graphics g)
     {
@@ -73,7 +53,7 @@ public class SendboxPanel extends Panel
         try
         {
             buffer = message.getBytes();
-            output.write(buffer);
+            MainClass.output.write(buffer);
             timer.stop();
             this.message.setText("");
             this.message.setEditable(true);

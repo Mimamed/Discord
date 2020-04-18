@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class ChattPanel extends Panel
+public class ChatPanel extends Panel
 {
     static int width = 500, length = ContactsPanel.length;
     static JTextArea messages = new JTextArea("");
