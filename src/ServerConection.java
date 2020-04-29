@@ -58,6 +58,7 @@ public class ServerConection implements Runnable
             {
                 if(input.read(buffer) == -1)
                 {
+                    System.out.println("stäng");
                     if (read)
                     {
                         MainClass.makeMessage("<html>Could not connect to server<br/>Error message: .input.read() returned -1<br/>Will exit in 3 seconds...</html>");
