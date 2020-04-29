@@ -43,8 +43,11 @@ public class ServerConection implements Runnable
 
         if(input.read(buffer) == -1)
         {
-            MainClass.makeMessage("<html>Could not connect to server<br/>Error message: .input.read() returned -1<br/>Will exit in 3 seconds...</html>");
-            exitTimer.start();
+            if (read)
+            {
+                MainClass.makeMessage("<html>Could not connect to server<br/>Error message: .input.read() returned -1<br/>Will exit in 3 seconds...</html>");
+                exitTimer.start();
+            }
         }
         else
         {
@@ -55,9 +58,16 @@ public class ServerConection implements Runnable
             {
                 if(input.read(buffer) == -1)
                 {
-                    MainClass.makeMessage("<html>Could not connect to server<br/>Error message: .input.read() returned -1<br/>Will exit in 3 seconds...</html>");
-                    exitTimer.start();
-                    read = false;
+                    if (read)
+                    {
+                        MainClass.makeMessage("<html>Could not connect to server<br/>Error message: .input.read() returned -1<br/>Will exit in 3 seconds...</html>");
+                        exitTimer.start();
+                        read = false;
+                    }
+                    else
+                    {
+                        client.close();
+                    }
                 }
                 else
                 {
@@ -151,8 +161,9 @@ public class ServerConection implements Runnable
         {
             if (connected)
             {
-                client.close();
+                sendMessage("", "server", '¤');
                 read = false;
+                connected = false;
             }
         }
         catch (Exception e)
