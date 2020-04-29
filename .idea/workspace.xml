@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18828adb-6bf5-4398-a915-dcc18f155658" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ConnectingPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ServerConection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SignUpPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Discord 1.0/ChattPanel.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Discord 1.0/ContactsPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Discord 1.0/ContactsPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Discord 1.0/MainClass$steng.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Discord 1.0/MainClass$steng.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Discord 1.0/MainClass$steng.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Discord 1.0/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Discord 1.0/MainClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Discord 1.0/SendboxPanel$LoadingScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Discord 1.0/SendboxPanel$LoadingScreen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Discord 1.0/SendboxPanel$Send.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Discord 1.0/SendboxPanel$Send.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Discord 1.0/SendboxPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Discord 1.0/SendboxPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChattPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ContactsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactsPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SendboxPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SendboxPanel.java" afterDir="false" />
@@ -31,7 +32,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZwOeGFjavfK4LEnGdvph1cvfep" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -39,10 +42,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Discord Server" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="MainClass" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -105,7 +114,13 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1587122388263</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="Bara en test med nätverk">
+      <created>1587196844376</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1587196844376</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -117,47 +132,51 @@
     <option name="LAST_COMMIT_MESSAGE" value="Bara en test med nätverk" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1587051695312">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1588072590524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587051695312" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588072590524" />
     <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585764045944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585764045944" />
-    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586295493774">
+    <state x="1256" y="396" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1587727462142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586295493774" />
-    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1587122387722">
+    <state x="1256" y="396" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587727462142" />
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587899030352">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587899030352" />
+    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1587196843066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="437" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586880125127" />
-    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587122387722" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1586879810075">
+    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587196843066" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1587727244920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586879810075" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1587147678472">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587727244920" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1588171792126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586880098217" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587147678472" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1587147678472">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588171792126" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1588171792125">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586880098217" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587147678472" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1587147678472">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588171792125" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1588171792125">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586880098217" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587147678472" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1587147678472">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588171792125" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1588171792126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586880098217" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587147678472" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588171792126" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1586303008396">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -178,10 +197,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586879810858" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587122399405">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587196851366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587122399405" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587196851366" />
     <state x="342" y="140" key="new project wizard" timestamp="1586967193042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -196,7 +215,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MainClass.java</url>
-          <line>23</line>
+          <line>24</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -52,8 +52,7 @@ public class SendboxPanel extends Panel
     {
         try
         {
-            buffer = message.getBytes();
-            MainClass.output.write(buffer);
+            MainClass.Listener.sendMessage(message, "someone", '+');//Fixa senare
             timer.stop();
             this.message.setText("");
             this.message.setEditable(true);
@@ -75,6 +74,16 @@ public class SendboxPanel extends Panel
                 {
                     message.setText(message.getText(0,200));
                     MainClass.makeMessage("<html>Too long message.<br/>We cut away the nessecary part, now try again</html>");
+                } catch (Exception ex)
+                {
+                    ex.printStackTrace();
+                }
+            }
+            else if (message.getText().indexOf(';') != -1 || message.getText().indexOf(':') != -1)
+            {
+                try
+                {
+                    MainClass.makeMessage("<html>Message can not contain \";\" or \":\".<br/>Please use a different name</html>");
                 } catch (Exception ex)
                 {
                     ex.printStackTrace();
