@@ -162,9 +162,9 @@ public class ServerConection implements Runnable
         {
             if (connected)
             {
-                sendMessage("", "server", '¤');
                 read = false;
                 connected = false;
+                sendMessage("", "server", '¤');
             }
         }
         catch (Exception e)
